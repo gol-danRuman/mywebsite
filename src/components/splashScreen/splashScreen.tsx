@@ -8,9 +8,9 @@ const SplashScreen: React.FC = () => {
 
     const [isSplashing, setSplashing] = useState(true);
 
-    setTimeout(function () {
-        setSplashing(false);
-    }, 8000);
+    // setTimeout(function () {
+    //     setSplashing(false);
+    // }, 8000);
 
     return <>{isSplashing ? <NameSplash/> : <> <SplashPage/> </>}</>
         
