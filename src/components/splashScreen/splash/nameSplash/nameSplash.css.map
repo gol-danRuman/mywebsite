@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACF,gBAAgB,EAAE,IAAI;EACtB,iBAAiB,EAAE,GAAG;EACtB,SAAS,EAAE,kCAAkC;CAC9C;;AAED,UAAU,CAAV,IAAU;EACR,IAAI;IACF,iBAAiB,EAAE,KAAK;;EAE1B,EAAE;IACA,iBAAiB,EAAE,CAAC",
+    "sources": [
+        "nameSplash.scss"
+    ],
+    "names": [],
+    "file": "nameSplash.css"
+}

@@ -1,0 +1,25 @@
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 100;
+  -webkit-animation: dash 20s linear alternate infinite;
+          animation: dash 20s linear alternate infinite;
+}
+
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: 10000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 10000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+/*# sourceMappingURL=nameSplash.css.map */
