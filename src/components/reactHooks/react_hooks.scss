@@ -1,0 +1,11 @@
+.hooks-list{
+    display: flex;
+    padding-left: 2vw;
+    .list-items{
+        padding: 1vw;
+    }
+}
+
+.MuiCardMedia-img {
+    object-fit: contain !important;
+}
