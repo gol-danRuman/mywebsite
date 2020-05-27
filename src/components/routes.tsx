@@ -8,15 +8,15 @@ import SplashScreen, { } from "./splashScreen/splashScreen";
 class Routes extends React.Component {
   render() {
     return (
-        <BrowserRouter>
+      <BrowserRouter>
         <Switch >
-            {/* <Route path='/' exact component={D3Charts} /> */}
-            <Redirect exact from='/' to="/hooks" /> 
-            <Route path='/d3' exact component={D3Charts} />
-            <Route path='/google' exact component={GoogleCharts} />
-            
-            {/* <Route path='/dashboard/company/:companyId/:tab' component={DashboardPage} /> */}
-            <Route path='/hooks' exact component={ReactHooks} />>
+          {/* <Route path='/' exact component={D3Charts} /> */}
+          <Redirect exact from='/' to="/hooks" />
+          <Route path='/d3' exact component={D3Charts} />
+          <Route path='/google' exact component={GoogleCharts} />
+
+          {/* <Route path='/dashboard/company/:companyId/:tab' component={DashboardPage} /> */}
+          <Route path='/hooks' exact component={ReactHooks} />>
       </Switch>
       </BrowserRouter>
     );
