@@ -9,3 +9,9 @@
 .MuiCardMedia-img {
     object-fit: contain !important;
 }
+
+@media (max-width: 600px){
+    .hooks-list{
+        flex-direction: column;
+    }
+}

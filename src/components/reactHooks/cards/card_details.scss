@@ -1,7 +1,5 @@
 .card_details{
-    display: flex;
-    // justify-content: ;
-    
+    display: flex;    
 }   
 
 .example{
@@ -37,6 +35,18 @@
         font-style: italic;
         font-weight: bold;
         font-family: "Courier New", monospace;
-        white-space: pre;
+        white-space: initial;
     }
+}
+
+@media(max-width: 600px){
+    .card_details{
+        flex-direction: column;
+        width: 600px;
+        .code{
+            width: 25em;
+            word-wrap: break-word;
+        }
+    }
+
 }
