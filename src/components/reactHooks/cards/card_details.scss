@@ -39,12 +39,32 @@
     }
 }
 
-@media(max-width: 600px){
+@media screen and (max-width: 599px){
     .card_details{
         flex-direction: column;
-        width: 600px;
+        width: 270px;
+        .example{
+            width: 17em;
+            word-wrap: break-word;
+        }
         .code{
-            width: 25em;
+            width: 17em;
+            word-wrap: break-word;
+        }
+    }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px){
+    .card_details{
+        flex-direction: column;
+        width: 645px;
+        .example{
+            width: 40em;
+            word-wrap: break-word;
+        }
+        .code{
+            width: 40em;
             word-wrap: break-word;
         }
     }
