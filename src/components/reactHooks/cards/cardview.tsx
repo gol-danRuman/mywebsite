@@ -14,10 +14,9 @@ const useStyles = makeStyles({
   },
 });
 
-export default function ImgMediaCard(props : any) {
+export default function ImgMediaCard(props: any) {
   const classes = useStyles();
-  const {img, title, description, ondetail, details, component, oncomponent} = props;
-
+  const { img, title, description, ondetail, details, component, oncomponent } = props;
 
   return (
     <Card className={classes.root}>
@@ -39,7 +38,7 @@ export default function ImgMediaCard(props : any) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary" onClick={() => {ondetail(details); oncomponent(component)}}> 
+        <Button size="small" color="primary" onClick={() => { ondetail(details); oncomponent(component) }}>
           Learn More
         </Button>
       </CardActions>

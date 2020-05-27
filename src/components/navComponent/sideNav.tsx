@@ -170,7 +170,7 @@ export default function MiniDrawer() {
         <Divider />
         <List>
           {navbarData.map((data, index) => (
-              <a href={`/${data.route}`}>
+              <a href={`/${data.route}`} key={index}>
                     <ListItem button key={index} >
                         <ListItemIcon><img className="list-icon" src={`${data.iconUrl}`}/></ListItemIcon>
                         <ListItemText primary={data.label} />
@@ -189,6 +189,11 @@ export default function MiniDrawer() {
           ))}
         </List>
       </Drawer>
+
+      <main className={classes.content}>
+        <div className={classes.toolbar} />
+        <Routes />
+      </main>
       
     </div>
   );

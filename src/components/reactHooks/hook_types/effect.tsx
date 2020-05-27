@@ -8,7 +8,9 @@ const EffectComponent = () => {
     return () => clearTimeout(timer);
   });
 
-  return <h1>useEffect Example: {time.toLocaleTimeString()}</h1>;
+  return (
+  <h1>{time.toLocaleTimeString()}</h1>
+  )
 };
 
 export default EffectComponent;

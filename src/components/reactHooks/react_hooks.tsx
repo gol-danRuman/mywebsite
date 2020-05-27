@@ -1,11 +1,11 @@
 import React, { Fragment, useState, useEffect } from "react";
-import ImgMediaCard from "./cardview";
-import ReactHooksDetailsPage from "./card_details";
+import ImgMediaCard from "./cards/cardview";
+import ReactHooksDetailsPage from "./cards/card_details";
 import "./react_hooks.scss";
 
 const ReactHooks = () => {
     const [details, setDetails] = useState('');
-    const [components, setComponents] = useState('');
+    const [component, setComponent] = useState('');
     const [datas, setDatas] = useState(null);
 
     useEffect(
@@ -39,9 +39,8 @@ const ReactHooks = () => {
                             details= {data.details}
                             component={data.component}
                             ondetail={setDetails}
-                            oncomponent={setComponents}
-                            
-                            />
+                            oncomponent={setComponent}
+                          />
                     </div>
 
                     )
@@ -51,13 +50,13 @@ const ReactHooks = () => {
             </Fragment>
         )
     }
-
     return (
+        
         <Fragment>
             {
                 details
                 ? 
-                    ReactHooksDetailsPage(details, components)
+                    <ReactHooksDetailsPage details={details} components={component}/>
                 :
                     renderHookList(datas)
             }

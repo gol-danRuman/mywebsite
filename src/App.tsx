@@ -12,11 +12,11 @@ import { Route } from 'react-router';
 const App: React.FC = () => {
   return (
     <Fragment>
-       <Route path='/' exact component={SplashScreen} />
+       {/* <Route path='/' exact component={SplashScreen} /> */}
        <MiniDrawer/>
-      <main id="content" className="content">
+          {/* <main id="content" className="content">
         <Routes />
-      </main> 
+      </main>  */}
     </Fragment>
   );
 }

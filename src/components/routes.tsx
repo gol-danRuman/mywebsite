@@ -11,9 +11,10 @@ class Routes extends React.Component {
         <BrowserRouter>
         <Switch >
             {/* <Route path='/' exact component={D3Charts} /> */}
+            <Redirect exact from='/' to="/hooks" /> 
             <Route path='/d3' exact component={D3Charts} />
             <Route path='/google' exact component={GoogleCharts} />
-            {/* <Redirect exact from='/dashboard/company/:companyId' to="/dashboard/company/:companyId/introduction" />  */}
+            
             {/* <Route path='/dashboard/company/:companyId/:tab' component={DashboardPage} /> */}
             <Route path='/hooks' exact component={ReactHooks} />>
       </Switch>
