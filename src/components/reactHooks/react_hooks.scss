@@ -1,10 +1,17 @@
 .hooks-list{
     display: flex;
+    width: 100%;
+    flex-wrap: wrap;
     padding-left: 2vw;
     .list-items{
         padding: 1vw;
     }
+    
 }
+.hooks-list>*{
+    flex: 0 0 33.3333%;
+}
+
 
 .MuiCardMedia-img {
     object-fit: contain !important;

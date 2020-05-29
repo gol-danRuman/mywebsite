@@ -6,6 +6,11 @@ import { useClipboard } from 'use-clipboard-copy';
 import {successToast, errorToast} from '../../toast/toast';
 
 import "./card_details.scss";
+import RefComponent from "../hook_types/ref";
+import ReducerComponent from "../hook_types/Reducer";
+import MemoComponent from "../hook_types/memo";
+import CallbackComponent from "../hook_types/callback";
+import LayoutEffectComponent from "../hook_types/layout_effect";
 
 const ReactHooksDetailsPage = (props: any) => {
 
@@ -25,8 +30,16 @@ const ReactHooksDetailsPage = (props: any) => {
                 return <StateComponent />
             case "useEffect":
                 return <EffectComponent />
-            case "useContext":
-                return <ContextComponent />
+            case "useRef":
+                return <RefComponent/>
+            case "useReducer":
+                return <ReducerComponent />
+            case "useMemo":
+                return <MemoComponent />
+            case "useCallback":
+                return <CallbackComponent />
+            case "useLayoutEffect":
+                return <LayoutEffectComponent />
             default:
                 return <></>
         }
