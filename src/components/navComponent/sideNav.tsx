@@ -89,7 +89,7 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-export default function MiniDrawer() {
+export default function MiniDrawer(props: any) {
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
@@ -103,25 +103,7 @@ export default function MiniDrawer() {
   };
 
 
-  const navbarData = [
-
-      {
-        label : "React Hooks",
-        iconUrl : "https://miro.medium.com/max/1166/1*fQefaOBmMkqfdpvphCEdVw.png",
-        route : "hooks"
-      },
-      {
-          label : "D3 Charts",
-        //   iconUrl : "images/useState.png",
-            iconUrl : "https://raw.githubusercontent.com/d3/d3-logo/master/d3.png",
-          route : "d3"
-      },
-      {
-        label : "Google Charts",
-        iconUrl : "https://img.favpng.com/19/7/16/bar-chart-logo-organization-marketing-png-favpng-rLR2nXHfrzaHGxyCmz9kHyCEh.jpg",
-        route : "google"
-      },
-  ]
+  const navbarData : any = props.navbar;
 
   return (
     <div className={classes.root}>
@@ -169,7 +151,7 @@ export default function MiniDrawer() {
         </div>
         <Divider />
         <List>
-          {navbarData.map((data, index) => (
+          {navbarData.map((data : any, index: any) => (
               <a href={`/${data.route}`} key={index}>
                     <ListItem button key={index} >
                         <ListItemIcon><img className="list-icon" src={`${data.iconUrl}`}/></ListItemIcon>

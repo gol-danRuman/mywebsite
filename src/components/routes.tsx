@@ -4,6 +4,7 @@ import D3Charts from "./learnD3/rootchart";
 import GoogleCharts from "./googleCharts/rootchart";
 import ReactHooks from "./reactHooks/react_hooks";
 import SplashScreen, { } from "./splashScreen/splashScreen";
+import ReactDragAndDrop from './react_beautiful_dnd';
 
 class Routes extends React.Component {
   render() {
@@ -16,7 +17,8 @@ class Routes extends React.Component {
           <Route path='/google' exact component={GoogleCharts} />
 
           {/* <Route path='/dashboard/company/:companyId/:tab' component={DashboardPage} /> */}
-          <Route path='/hooks' exact component={ReactHooks} />>
+          <Route path='/hooks' exact component={ReactHooks} />
+          <Route path='/react/dnd' exact component={ReactDragAndDrop} />
       </Switch>
       </BrowserRouter>
     );

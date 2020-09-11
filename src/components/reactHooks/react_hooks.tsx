@@ -55,8 +55,12 @@ const ReactHooks = () => {
         <Fragment>
             {
                 details
-                ? 
+                ?   (
+                    <div>
+                    <button onClick={() => setDetails('')}>return</button>
                     <ReactHooksDetailsPage details={details} components={component}/>
+                    </div>
+                )
                 :
                     renderHookList(datas)
             }
