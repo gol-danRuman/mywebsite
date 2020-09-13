@@ -20,6 +20,12 @@ const nav = [
     iconUrl:
       "https://cdn.iconscout.com/icon/premium/png-512-thumb/drag-and-drop-616653.png",
     route: "react/dnd"
+  },
+  {
+    label: "React Tree",
+    iconUrl:
+      "https://cdn.iconscout.com/icon/premium/png-512-thumb/drag-and-drop-616653.png",
+    route: "react/tree"
   }
 ];
 
