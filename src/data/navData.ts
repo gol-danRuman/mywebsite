@@ -24,8 +24,20 @@ const nav = [
   {
     label: "React Tree",
     iconUrl:
-      "https://cdn.iconscout.com/icon/premium/png-512-thumb/drag-and-drop-616653.png",
+      "https://cdn0.iconfinder.com/data/icons/folder-line/512/folder_tree-512.png",
     route: "react/tree"
+  },
+  {
+    label: "React Editor",
+    iconUrl:
+      "https://cdn.iconscout.com/icon/premium/png-256-thumb/code-editor-908638.png",
+    route: "react/editor"
+  },
+  {
+    label: "React Table",
+    iconUrl:
+      "https://static.thenounproject.com/png/935839-200.png",
+    route: "react/table"
   }
 ];
 
