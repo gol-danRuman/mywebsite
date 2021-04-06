@@ -6,7 +6,7 @@
     "@ckeditor/ckeditor5-build-classic": "^23.0.0",
     "@ckeditor/ckeditor5-build-decoupled-document": "^23.0.0",
     "@ckeditor/ckeditor5-editor-decoupled": "^23.0.0",
-    "@ckeditor/ckeditor5-image": "^23.0.0",
+    "@ckeditor/ckeditor5-image": "^27.0.0",
     "@ckeditor/ckeditor5-react": "^2.1.0",
     "@fortawesome/fontawesome-free": "^5.13.0",
     "@fortawesome/react-fontawesome": "^0.1.9",
