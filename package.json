@@ -45,7 +45,7 @@
     "use-clipboard-copy": "^0.1.2"
   },
   "scripts": {
-    "dev": "react-scripts start",
+    "dev": "react-scripts --openssl-legacy-provider start",
     "run": "PORT=3001 react-scripts start",
     "start": "serve -s build",
     "build": "react-scripts build",
