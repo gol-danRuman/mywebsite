@@ -42,7 +42,8 @@
     "serve": "^11.3.2",
     "styled-components": "^5.2.0",
     "typescript": "3.8.3",
-    "use-clipboard-copy": "^0.1.2"
+    "use-clipboard-copy": "^0.1.2",
+    "webpack": "^5.77.0"
   },
   "scripts": {
     "dev": "react-scripts --openssl-legacy-provider start",
