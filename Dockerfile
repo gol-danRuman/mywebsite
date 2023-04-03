@@ -10,7 +10,7 @@ ENV PATH /website/node_modules/.bin:$PATH
 # install app dependencies
 COPY package.json ./
 COPY package-lock.json ./
-RUN npm install --legacy-peer-deps --silent
+RUN npm ci --silent
 RUN npm install react-scripts -g --silent
 
 # add app
