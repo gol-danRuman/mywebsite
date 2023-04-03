@@ -2,7 +2,7 @@ import React,{ Fragment, useState} from "react";
 import D3Charts from "./learnD3/rootchart";
 import GoogleCharts from "./googleCharts/rootchart";
 import ReactHooks from "./reactHooks/react_hooks";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const SwitchComponent : React.FC = () => {
     const [activeComponent, setActiveComponent] = useState('hooks');
