@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": "18.x"
+    "node": "16.13.2",
+    "npm": "8.1.2"
   },
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^36.0.1",
